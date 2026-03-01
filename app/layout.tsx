@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 // You can swap Inter later if you want something more expressive
 const inter = Inter({
@@ -48,6 +49,7 @@ export default function RootLayout({
             <Footer />
           </footer>
         </div>
+        <Analytics />
       </body>
     </html>
   );
