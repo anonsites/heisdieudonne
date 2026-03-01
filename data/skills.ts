@@ -1,0 +1,106 @@
+export const skills = [
+  {
+    category: "Computer Networking",
+    items: [
+      { name: "Setup LAN (Ethernet & Wifi)", level: 4 },
+      { name: "WiFi Router configuration", level: 4 },
+      { name: "Network Maintanance", level: 4 },
+      { name: "Network Troubleshooting", level: 3 },
+      { name: "Network Security", level: 4 },
+    ],
+    sources: ["School education", "Cisco Networking Academy"],
+  },
+  {
+    category: "Software Development",
+    items: [
+      { name: "Web Development", level: 4 },
+      { name: "Mobile app development", level: 2 },
+      { name: "Gaming & AVR development", level: 0 },
+      { name: "SEO (Search Engine Optimization)", level: 5 },
+      { name: "Coding skills", level: 2 },
+      { name: "Vibe coding skills", level: 4 },
+    ],
+    sources: ["W3Schools", "freeCodeCamp", "ChatGPT", "Google"],
+  },
+  {
+    category: "Database Management",
+    items: [
+      { name: "APIs & Data Flow", level: 2 },
+      { name: "Supabase", level: 5 },
+      { name: "Firebase", level: 1 },
+      { name: "MongoDB", level: 0 },
+      { name: "Auth & Roles (basic)", level: 3 },
+      { name: "Database Schema Design", level: 2 },
+
+    ],
+    sources: ["Supabase Docs", "oracle", "ChatGPT", "Google"],
+  },
+  {
+    category: "Social Networking & Security Mindset",
+    items: [
+      { name: "Ethical Hacking Concepts", level: 3 },
+      { name: "System Weakness Analysis", level: 3 },
+      { name: "Security Awareness", level: 4 },
+      { name: "Defensive Strategies", level: 3 },
+      { name: "Social engineering", level: 4 },
+      { name: "Digital wellbeing", level: 4 },
+    ],
+    sources: ["school education", "cisco networking academy", "ChatGPT", "Google"],
+  },
+  {
+    category: "Google Workspace",
+    items: [
+      { name: "Google mail (Gmail)", level: 5 },
+      { name: "Google forms", level: 5 },
+      { name: "Google Docs", level: 5 },
+      { name: "Google Sheets", level: 3 },
+      { name: "Google Slides", level: 3 },
+      { name: "Google Drive", level: 5 },
+      { name: "Google Calendar", level: 5 },
+    ],
+    sources: ["School education", "Google"],
+  },
+  {
+    category: "Microsoft 360 Suite",
+    items: [
+      { name: "Microsoft word", level: 4 },
+      { name: "Microsoft Excel", level: 3 },
+      { name: "Microsoft PowerPoint", level: 4 },
+      { name: "Microsoft Teams", level: 2 },
+      { name: "Microsoft Outlook", level: 2 },
+      { name: "Microsoft OneDrive", level: 2 },
+      { name: "Microsoft OneNote", level: 2 },
+    ],
+    sources: ["School education", "Google"],
+  },
+  {
+    category: "Operating Systems & Software Tools",
+    items: [
+      { name: "Windows", level: 5 },
+      { name: "MacOS", level: 2 },
+      { name: "Linux", level: 1 },
+      { name: "Git & GitHub", level: 4 },
+      { name: "Canva", level: 4 },
+      { name: "Figma", level: 1 },
+      { name: "Notion", level: 1 },
+      { name: "CapCut", level: 3 },
+      { name: "Adobe Photoshop", level: 1 },
+    ],
+    sources: ["school education", "Documentation", "ChatGPT", "Google"],
+  },
+  {
+    category: "Others",
+    items: [
+      { name: "Foreign languages: English", level: 5 },
+      { name: "Public Speaking", level: 4 },
+      { name: "Project Management", level: 4 },
+      { name: "Leadership", level: 3 },
+      { name: "Discipline", level: 5 },
+      { name: "Time Management", level: 5 },
+      { name: "Problem Solving", level: 5 },
+      { name: "Communication", level: 5 },
+      { name: "Collaboration", level: 5 },
+    ],
+    sources: ["Talent", "School education", "ChatGPT", "Google"],
+  }
+];

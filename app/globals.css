@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-muted: hsl(var(--muted));
+  --color-accent: hsl(var(--accent));
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/* --------------------
+   CSS VARIABLES
+--------------------- */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 98%;
+    --foreground: 222 47% 11%;
+
+    --border: 214 32% 91%;
+    --muted: 215 16% 47%;
+    --accent: 222 89% 55%;
+  }
+
+  .dark {
+    --background: 222 47% 7%;
+    --foreground: 210 40% 98%;
+
+    --border: 217 19% 18%;
+    --muted: 215 20% 65%;
+    --accent: 222 89% 65%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* --------------------
+   BASE STYLES
+--------------------- */
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-2xl md:text-4xl font-semibold tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-4xl font-bold;
+  }
+
+  p {
+    font-family: var(--font-Cooljazz), sans-serif;
+    line-height: 1.625;
+    color: hsl(var(--foreground));
+  }
+}
+
+/* --------------------
+   UTILITIES
+--------------------- */
+@layer utilities {
+  .container {
+    @apply max-w-6xl mx-auto px-4;
+  }
+
+  .stat-card {
+    @apply rounded-xl border backdrop-blur p-6;
+    border-color: hsl(var(--border));
+    background-color: hsl(var(--background) / 0.6);
+  }
+
+  .accent-text {
+    color: hsl(var(--accent));
+  }
+
+  @keyframes slideUpFade {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up-fade {
+    animation: slideUpFade 0.18s ease-out forwards;
+    opacity: 0;
+  }
 }
