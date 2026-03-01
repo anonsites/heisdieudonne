@@ -10,7 +10,7 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
-// Correct the text if you want to use Cooljazz font
+// Correct the cooljazz name if you want to use Cooljazz font
 const rosemary = localFont({
   src: "../public/fonts/Cooljazz.ttf",
   variable: "--font-Cooljaz",
