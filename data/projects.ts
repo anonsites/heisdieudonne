@@ -1,12 +1,12 @@
 export const projects = [
   {
-    slug: "coming-soon",
+    slug: "bucura-ai",
     name: "BUCURA AI",
     status: "Progress",
     featured: false,
     img: "/projects/bucura-ai.png",
     description: "A web application that provides AI-powered solutions for various tasks, such as content generation, data analysis, and automation.",
-    techStack: ["Next.js", "Tailwind CSS", "Supabase", "OpenAI API","Gemini API", "Pinecone", "Vercel", "Cloudinary", "groq", "RAG", "framer motion"],
+    techStack: ["Next.js", "Tailwind CSS", "Supabase", "Machine learning", "SSE","Cloudflare", "Pinecone", "Vercel", "Cloudinary", "groq", "RAG", "framer motion"],
     highlights: [
       "Project analysis and positioning ✓",
       "Tools analysis and selection for optimal knowledge, performance and scalability ✓",
@@ -16,7 +16,7 @@ export const projects = [
       "PHASE 4: Testing, optimization, and deployment",
       "PHASE 5: Post-launch monitoring, user feedback collection, and iterative improvements",
     ],
-    link: "",
+    link: "https://bucura-ai.vercel.app/",
   },
   {
     slug: "fast-earn.",
@@ -49,7 +49,7 @@ export const projects = [
     ],
     link: "https://piston-tours.vercel.app",
   },
-  {
+  /*{
     slug: "unilak-community",
     name: "UNILAK COMMUNITY",
     status: "Done",
@@ -64,7 +64,7 @@ export const projects = [
       "Structured the database to support reviews, announcements, and user profiles effectively.",
     ],
     link: "https://unilak-community.vercel.app/",
-  },
+  },*/
  
  
  //comment this to always know how to add a project
