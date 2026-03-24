@@ -19,6 +19,6 @@ export const profile = {
     fieldsExplored: 53,
     toolsUsed: 400,
     projectsShipped: 2,
-    netWorth: 2.004, // in USD, just for fun
+    birthDate: 2004, // in USD, just for fun
   },
 };

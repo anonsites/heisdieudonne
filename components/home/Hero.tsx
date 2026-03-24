@@ -66,9 +66,9 @@ export default function Hero() {
         </div>
 
         <div className="rounded-xl border border-green-500/20 bg-green-500/5 backdrop-blur p-6 text-center hover:bg-green-500/10 transition-colors">
-          <h2 className="text-sm text-foreground mb-2">Net Worth</h2>
+          <h2 className="text-sm text-foreground mb-2">Age</h2>
           <p className="text-3xl font-bold text-white">
-            ${wrappedStats.netWorth} 
+            {wrappedStats.birthDate} 
           </p>
         </div>
       </div>
