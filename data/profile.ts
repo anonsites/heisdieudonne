@@ -18,7 +18,7 @@ export const profile = {
   wrappedStats: {
     fieldsExplored: 53,
     toolsUsed: 400,
-    projectsShipped: 2,
+    projectsShipped: 4,
     birthDate: 2004, // in USD, just for fun
   },
 };
